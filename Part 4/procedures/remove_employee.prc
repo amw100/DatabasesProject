@@ -1,5 +1,3 @@
-
--- this procedure deletes employee from EMPLOYEE table (employment dismissal)
 create or replace procedure remove_employee(employee_id_num NUMBER) is
    tot_emps NUMBER;
 begin
@@ -13,7 +11,7 @@ begin
   from EMPLOYEE;
   
   -- display total number of employees
-  dbms_output.put_line( 'Total employees = ' || TO_CHAR(tot_emps)); 
+  dbms_output.put_line( 'Removed Employee. ID: '|| TO_CHAR(employee_id_num) || ' Total employees : ' || TO_CHAR(tot_emps)); 
   
          
     
